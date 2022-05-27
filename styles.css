@@ -67,7 +67,7 @@ a:hover {
     background-position:left 1007px top 197px, 
                         left 101px top 59px, 
                         left 178px top 438px, 
-                        left 295px top 579px;;
+                        left 277px top 579px;;
 }
 
 .hero-content{
@@ -127,13 +127,16 @@ a:hover {
 /* Content  */
 .hero h2{
     font-size: 50px;
-    margin-left: -130px;
+    margin-left: -162px;
     margin-top: 133px;
     font-weight: bold;
 }
 
 /* Images  */
 .hero-images{
+    position: absolute;
+    left: 370px;
+    top: 770px;
     margin: auto;
 }
 .hero-images img{
@@ -142,6 +145,9 @@ a:hover {
 }
 
 .hero-images2{
+    position: absolute;
+    left: 370px;
+    top: 770px;
     margin: auto;
 }
 .hero-images2 img{
