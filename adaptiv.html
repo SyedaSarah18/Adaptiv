@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font links -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400&display=swap" rel="stylesheet">  
+    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hero-images').hover(function(){
+	            $('.hero-images').fadeOut();
+                $('.hero-images2').fadeIn(200);
+            });
+            $(".hero-images2").mouseleave(function(){
+                $('.hero-images2').fadeOut(500);
+                $('.hero-images').fadeIn();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <nav class="nav-bar">
+
+            <span class="logo">
+                Adaptiv
+            </span>
+            
+            <i class="fas fa-bars menu-toggle" aria-hidden="true"></i>
+            
+            <ul class="nav-items">
+                <li><a href="https://docs.google.com/document/d/1uKJGLDI8wHnniaxc-smNLMLAr7vx15dPiGhk8j4p2uc/edit" target="_blank">White Paper</a>
+                </li>
+                <li><a href="https://www.adaptiv.me/academy" target="_blank">Academy</a>
+                </li>
+                <li><a href="https://www.adaptiv.me/careers" target="_blank">Careers</a>
+                </li>
+                <li><a href="https://www.adaptiv.me/signup" target="_blank">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main body -->
+    <div class="hero">
+        
+        <!-- Content -->
+        <div class="hero-content">
+            <div class="h1">
+                We just changed the whole game.
+            </div>
+            <div class="p">
+                We are building a social network for professionals that will shake things up, and you wouldn’t want to be left behind
+            </div>
+            
+            <button id="join">I want to be a part</button>
+            <button id="more">Tell me more</button>
+            
+            <h2>Watch. Learn. Grow.</h2>
+        </div>
+
+        <!-- Screen Images -->
+        <div class="hero-images">
+            <img src="./Images/Profile_NFT.png" width ="265px" height="386px" style="border-radius: 10px; ">
+            <img src="./Images/photo2.jpeg" width="153px" height="386px">
+            <img src="./Images/phot3.jpeg" width="153px" height="386px" style="opacity: 1;">
+        </div>
+        <div class="hero-images2" style="display: none;" >
+            <img src="./Images/photo1.jpeg" width="153px" height="386px">
+            <img src="./Images/Profile_NFT.png" width ="265px" height="386px" style="border-radius: 10px; ">
+            <img src="./Images/phot3.jpeg" width="153px" height="386px" style="opacity: 1;">
+        </div>
+
+        <!-- Media Query Images -->
+        <div class="media1" style="margin-bottom: 23px;">
+            <img src="./Images/photo2.jpeg" alt="" width="135px" height="386px" style="margin-right: 28px;">
+            <img src="./Images/Profile_NFT.png" alt="" width ="255px" height="386px">
+        </div>
+        <div class="media2">
+            <img src="./Images/Profile_NFT.png" alt="" width ="255px" height="386px" style="margin-right: 25px;">
+            <img src="./Images/phot3.jpeg" alt="" width="145px" height="386px">
+        </div>
+    </div>
+</body>
+</html>

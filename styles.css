@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;   
+   }
+
+/* Navigation bar  */
+header{
+    position: sticky;
+    top: 0;
+    background-color:#ffff ;
+}
+.nav-bar{
+    margin:13px 151px 13px 202px;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Urbanist',sans-serif;
+    /* position: sticky;
+    top: 0; */
+    height: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #4D4D97;
+    border: 1px solid #4D4D97;
+    margin: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: #181818;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+a:hover {
+    color: #0a58ca;
+}
+
+.menu-toggle{
+    display: none !important ;
+}
+
+/* Content  */
+.hero{
+    margin: 51px;
+    margin-top: 0px;
+    background-color:#F3F6F6 ;
+    height: 1086px;
+    text-align: center;
+    /* padding: 72px; */
+    font-family:'Urbanist',sans-serif;
+    /* font-weight: bold; */
+    border-radius: 25px;
+    background-image: url(./Images/Ellipse\ 1.png),
+                    url(./Images/Ellipse\ 2.png),
+                    url(./Images/Ellipse\ 3.png),
+                    url(./Images/Ellipse\ 4.png) ;
+    background-repeat: no-repeat;
+    background-position:left 1007px top 197px, 
+                        left 101px top 59px, 
+                        left 178px top 438px, 
+                        left 265px top 557px;
+}
+
+.hero-content{
+    margin-bottom: -24px;
+}
+.hero .h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin: auto;
+    width: 633px;
+    height: 135px;
+    padding-top: 78px;
+}
+
+.hero .p{
+    font-size: 28px;
+    color: #4E4E4E;
+    width: 614px;
+    margin: auto;
+    padding: 147px 0px 30px 0px;
+}
+
+/* Buttons */
+.hero button{
+    border: 1px solid #181818;
+    border-radius: 30px;
+    font-family:'Urbanist',sans-serif;
+    padding: 16px 57px;
+    margin: 9px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#join{
+    background-color:#181818 ;
+    color: #F3F6F6;
+    font-size: 18px;
+}
+#join:hover{
+    background-color:#F3F6F6 ;
+    color: #181818;
+}
+#join:hover + #more {
+    background-color:#181818 ;
+    color: #F3F6F6;
+}
+
+#more{
+    background-color:#F3F6F6 ;
+    color: #181818;
+    font-size: 21px;
+}
+#more:hover{
+    opacity: 3;
+}
+
+/* Content  */
+.hero h2{
+    font-size: 50px;
+    margin-left: -180px;
+    margin-top: 134px;
+    font-weight: bold;
+}
+
+/* Images  */
+.hero-images{
+    position: absolute;
+    left: 370px;
+    top: 770px;
+    margin: 2px;
+}
+.hero-images img{
+    padding: 12px; 
+    border-radius: 20px;
+}
+
+.hero-images2{
+    position: absolute;
+    left: 370px;
+    top: 770px;
+    margin: 2px;
+}
+.hero-images2 img{
+    padding: 12px; 
+    border-radius: 20px;
+}
+.media1, .media2{
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width:500px){
+
+    .nav-bar{
+        padding-right: 24px ;
+        padding-left: 29px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 20px;
+        margin-left: -184px;
+        padding: 9px;
+    }
+    .menu-toggle{
+        display: block !important;
+        margin-top: 11px;
+        color: #4D4D97;
+        font-size: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+        margin: auto;
+    }
+    .nav-items{
+        display: none;   
+    }
+    .hero{
+        margin: 26px;
+        margin-top: -9px;
+        width: 446px;
+        height: 1552px;
+        background-position: left 1007px top 197px,
+                             left 346px top 184px, 
+                             left 28px top 22px, 
+                             left 10px top 544px;
+    }
+    .hero .h1{
+        font-size: 57px;
+        font-weight: 600;
+        line-height: 61px;
+        width: 447px;
+        height: 149px;
+        padding-top: 41px;
+    }
+    .hero .p{
+        font-size: 31px;
+        line-height: 34px;
+        color: #4E4E4E;
+        width: 385px;
+        height: 138px;
+        padding-top: 41px;
+        margin: auto;
+    }
+    .hero button{
+        padding: 16px 128px;
+        margin-top: 119px;
+    }
+    .hero #more{
+        padding: 16px 142px;
+        margin-top: 9px;
+    }
+    .hero h2 {
+        font-size: 51px;
+        margin: auto;
+        margin-top: 53px;
+    }
+    .hero-images{
+        display: none;
+    }
+    .media1{
+        display: block;
+        margin: 2px;
+        margin-top: 58px;
+    }
+    .media2{
+        display: block;
+        margin: 2px;
+    }
+    .media1 img{
+        border-radius: 15px;
+    }
+    .media2 img{
+        border-radius: 15px;
+    }
+}
