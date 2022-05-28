@@ -67,7 +67,7 @@ a:hover {
     background-position:left 1007px top 197px, 
                         left 101px top 59px, 
                         left 178px top 438px, 
-                        left 265px top 557px;
+                        left 277px top 579px;;
 }
 
 .hero-content{
@@ -127,8 +127,8 @@ a:hover {
 /* Content  */
 .hero h2{
     font-size: 50px;
-    margin-left: -180px;
-    margin-top: 134px;
+    margin-left: -162px;
+    margin-top: 133px;
     font-weight: bold;
 }
 
@@ -137,7 +137,7 @@ a:hover {
     position: absolute;
     left: 370px;
     top: 770px;
-    margin: 2px;
+    margin: auto;
 }
 .hero-images img{
     padding: 12px; 
@@ -148,7 +148,7 @@ a:hover {
     position: absolute;
     left: 370px;
     top: 770px;
-    margin: 2px;
+    margin: auto;
 }
 .hero-images2 img{
     padding: 12px; 
@@ -170,13 +170,13 @@ a:hover {
         font-size: 20px;
         margin-left: -184px;
         padding: 9px;
+        margin-right: 92px;
     }
     .menu-toggle{
-        display: block !important;
+        display: inline-block !important;
         margin-top: 11px;
         color: #4D4D97;
         font-size: 30px;
-        margin-right: 40px;
         cursor: pointer;
         margin: auto;
     }
